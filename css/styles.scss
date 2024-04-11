@@ -1,0 +1,73 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "style_header_screen";
+@import "style_FAQ";
+@import "style_contact_us";
+@import "style_header";
+@import "style_footer";
+@import "style_feedback";
+@import "style_whyus";
+@import "style_departures";
+@import "style_additionally";
+@import "style_services";
+
+body {
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "FiraSans_Regular400", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1770px;
+  margin: 0 auto;
+}
+
+.img__fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.container__wrapper {
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ededed;
+  margin-top: 30px;
+}
+
+.top-margin {
+  margin-top: 186px;
+}
+
+.main-title {
+  color: $black;
+  font-family: "FiraSans_SemiBold600", serif;
+  font-size: 40px;
+  line-height: 130%;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .top-margin {
+    margin-top: 150px;
+  }
+  .main-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-margin {
+    margin-top: 100px;
+  }
+  .main-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}

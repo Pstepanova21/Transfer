@@ -1,0 +1,347 @@
+.container__feedback {
+  // padding-left: $left-block-gap;
+  padding-top: $top-block-gap;
+}
+
+.embed- {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__text__feedback {
+  max-width: 450px;
+  width: 100%;
+  .card-body {
+    position: static;
+  }
+}
+
+.card__video__feedback {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: $white;
+  border: $orange-border;
+  color: $orange;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $orange;
+    border: $orange-border;
+    color: $white;
+  }
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: transparent !important;
+  color: black !important;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  outline: none;
+}
+
+#owl-example-article {
+  .item {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.owl-next span,
+.owl-prev span {
+  font-size: 30px !important;
+  cursor: pointer;
+  outline: none !important;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.owl-nav {
+  position: absolute;
+  top: -4.5rem;
+  left: 95%;
+}
+
+.owl-item {
+  background-color: transparent;
+  color: black;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.owl-prev {
+  float: left;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-right: 70px;
+  margin-top: 0;
+}
+
+.owl-next {
+  float: right;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.owl-dots {
+  counter-reset: slides-num; /* Initialize counter. */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 15px;
+
+  &:after {
+    content: counter(slides-num);
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    vertical-align: middle;
+  }
+}
+
+.owl-dot {
+  display: inline-block;
+  counter-increment: slides-num; /* Increment counter */
+  margin-right: 5px;
+
+  span {
+    display: none;
+  }
+
+  &.active {
+    &:before {
+      content: counter(slides-num) " / "; /* Use the same counter to get current item. */
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .owl-nav {
+    position: absolute;
+    top: 100%;
+    transform: translate(-160%);
+    left: 15%;
+  }
+}
+.nav-pills .nav-link {
+  color: #fb8d00;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #ffffff;
+  border: 1px solid #fb8d00;
+  transition: all 0.2s ease;
+}
+.nav-pills .nav-link.active:hover,
+.nav-pills .show > .nav-link:hover {
+  background-color: #fb8d00;
+  border: 1px solid #fb8d00;
+  color: #ffffff;
+}
+// То, что затерлось при слиянии dev2 в main::after
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: transparent !important;
+  color: black !important;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  outline: none;
+}
+
+#owl-example-article .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-next span,
+.owl-prev span {
+  font-size: 30px !important;
+  cursor: pointer;
+  outline: none !important;
+}
+.owl-next span:focus,
+.owl-prev span:focus {
+  outline: none !important;
+}
+
+.owl-item {
+  background-color: transparent;
+  color: black;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.owl-prev {
+  float: left;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-right: 70px;
+  margin-top: 0;
+}
+
+.owl-next {
+  float: right;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.owl-dots {
+  counter-reset: slides-num; /* Initialize counter. */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 15px;
+}
+.owl-dots:after {
+  content: counter(slides-num);
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.owl-dot {
+  display: inline-block;
+  counter-increment: slides-num; /* Increment counter */
+  margin-right: 5px;
+}
+.owl-dot span {
+  display: none;
+}
+.owl-dot.active:before {
+  content: counter(slides-num) " / "; /* Use the same counter to get current item. */
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.inner-container {
+  max-width: 1553px;
+  --bs-gutter-x: 1.5rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ededed;
+}
+
+.container-block {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.container-block h3 {
+  font-family: "FiraSans_Regular400";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 125px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  flex: 1;
+  -webkit-text-stroke: 2px #fb8d00;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.container-block p {
+  font-family: "FiraSans_Regular400";
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  flex: 6;
+}
+
+@media screen and (max-width: 767px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container-block {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 280px;
+  }
+  .inner-container {
+    display: block;
+  }
+  .owl-nav {
+    top: -5rem;
+    left: 85%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container-block {
+    max-width: 342px;
+  }
+  .owl-nav {
+    top: -5rem;
+    left: 85%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .owl-nav {
+    position: absolute;
+    top: 100%;
+    transform: translate(-160%);
+    left: 15%;
+  }
+  .owl-nav {
+    top: -8.25rem;
+    left: 87%;
+  }
+}
